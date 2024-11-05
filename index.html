@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Bookstore Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Online Bookstore</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#login">Login</a>
+      <a href="#register">Register</a>
+      <a href="#cart">Cart</a>
+      <a href="#orders">Orders</a>
+      <a href="#reports">Reports</a>
+      <a href="#profile">Profile</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to the Online Bookstore</h2>
+    <div class="search">
+      <input type="text" id="searchTerm" placeholder="Search books by title, author, or category">
+      <button onclick="searchBooks()">Search</button>
+    </div>
+    <div id="results"></div>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login" class="auth-section">
+    <h2>Login</h2>
+    <input type="email" id="loginEmail" placeholder="Email">
+    <input type="password" id="loginPassword" placeholder="Password">
+    <button onclick="loginUser()">Login</button>
+  </section>
+
+  <!-- Registration Section -->
+  <section id="register" class="auth-section">
+    <h2>Register</h2>
+    <input type="text" id="registerName" placeholder="Name">
+    <input type="email" id="registerEmail" placeholder="Email">
+    <input type="password" id="registerPassword" placeholder="Password">
+    <button onclick="registerUser()">Register</button>
+  </section>
+  
+  <!-- Shopping Cart Section -->
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <div id="cartItems">
+      <!-- JavaScript will populate this area with cart items -->
+    </div>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <!-- Orders Section -->
+  <section id="orders">
+    <h2>Order History</h2>
+    <div id="orderHistory">
+      <!-- JavaScript will populate this area with order history -->
+    </div>
+  </section>
+
+  <!-- Reports Section -->
+  <section id="reports">
+    <h2>Reports</h2>
+    <button onclick="generateReport()">Generate Sales Report</button>
+    <div id="reportOutput">
+      <!-- JavaScript will populate this area with report results -->
+    </div>
+  </section>
+
+  <!-- Profile Section -->
+  <section id="profile">
+    <h2>Your Profile</h2>
+    <p><strong>Name:</strong> <span id="profileName">John Doe</span></p>
+    <p><strong>Email:</strong> <span id="profileEmail">john@example.com</span></p>
+    <button onclick="editProfile()">Edit Profile</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Online Bookstore</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
